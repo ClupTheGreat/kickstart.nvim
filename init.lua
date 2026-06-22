@@ -108,6 +108,7 @@ do
 
   -- Make line numbers default
   vim.o.number = true
+  vim.o.relativenumber = true
   -- You can also add relative line numbers, to help with jumping.
   --  Experiment for yourself to see if you like it!
   -- vim.o.relativenumber = true
@@ -694,7 +695,12 @@ do
   local servers = {
     -- clangd = {},
     -- gopls = {},
-    -- pyright = {},
+    --
+    -- python lsp
+    basedpyright = {},
+    ruff = {},
+    debugpy = {},
+
     -- rust_analyzer = {},
     --
     -- Some languages (like typescript) have entire language plugins that can be useful:
